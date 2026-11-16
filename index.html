@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textora</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <h1>Textora</h1>
+        <p>Beyond the Colours with your Thought</p>
+
+        <div id="box" contenteditable="true"></div>
+
+        <br>
+
+        <button class="download-btn" onclick="Paint()">
+            Download
+        </button>
+
+        <br>
+        <p>Add Background Colour</p>
+
+        <button class="color-btn red" onclick="changeColor('red')"></button>
+
+        <button class="color-btn green" onclick="changeColor('green')"></button>
+
+        <button class="color-btn blue" onclick="changeColor('blue')"></button>
+
+    </center>
+        
+         <p>Add Text Colour</p>
+
+        <button class="color-btn red" onclick="changeText('red')"></button>
+
+        <button class="color-btn green" onclick="changeText('green')"></button>
+
+        <button class="color-btn blue" onclick="changeText('blue')"></button>
+
+        <br><br>
+
+    
+
+    <select onchange="changeFont(this.value)">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
